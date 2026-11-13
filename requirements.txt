@@ -1,0 +1,26 @@
+# Kalp Hastalığı Tahmini — proje bağımlılıkları
+# Kurulum:  python -m pip install -r requirements.txt
+# Test edilen Python sürümü: 3.13.17
+
+# --- Veri işleme ---
+pandas==3.1.1
+numpy==2.5.4
+
+# --- Makine öğrenmesi ---
+# NOT: scikit-learn sürümü bilerek sabitlenmiştir. Windows'ta Smart App Control /
+# Device Guard açıkken bazı yeni scikit-learn sürümlerinin imzasız
+# sklearn/tree/_tree.pyd dosyası engellenir ve DecisionTree / RandomForest
+# içe aktarılamaz. 1.7.2 bu sorunu yaşamaz.
+scikit-learn==1.7.2
+scipy==1.18.1
+joblib==1.6.0
+
+# --- Görselleştirme ---
+matplotlib==3.11.2
+seaborn==0.13.2
+
+# --- Web arayüzü ---
+streamlit==1.67.0
+
+# --- Jupyter Notebook'u çalıştırmak için ---
+ipykernel==7.4.0

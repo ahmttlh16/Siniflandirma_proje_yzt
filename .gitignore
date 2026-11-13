@@ -1,0 +1,28 @@
+# --- Sanal ortam (depoya ASLA eklenmez, yüzlerce MB tutar) ---
+venv/
+.venv/
+env/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- İşletim sistemi ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Editör ---
+.vscode/
+.idea/
+
+# --- Streamlit gizli bilgileri ---
+.streamlit/secrets.toml
+
+# NOT: Aşağıdakiler bilerek depoya DAHİL edilir, yoksayılmaz:
+#   data/processed.cleveland.data  -> veri 18 KB, projeyi tekrarlanabilir kılar
+#   model/kalp_modeli.pkl          -> 4 KB, arayüzün çalışması için gerekli
+#   outputs/                       -> grafikler README'de gösteriliyor
